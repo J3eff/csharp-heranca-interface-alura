@@ -19,13 +19,19 @@ namespace ByteBank
             roberta.Nome = "Roberta";
             roberta.CPF = "454.658.148-3";
             roberta.Salario = 5000;
+
+            Funcionario robertaTest = roberta;
+
+            Console.WriteLine("Bonificação de uma referencia de Diretor: " + roberta.GetBonificacao());
+            Console.WriteLine("Bonificação de uma referencia de Funcionario: " + robertaTest.GetBonificacao());
+
             gerenciador.Registrar(roberta);
 
             Console.WriteLine(carlos.Nome);
-            Console.WriteLine("Funcionario - Bonificação: " + carlos.GetBonificacao());
+            Console.WriteLine(carlos.GetBonificacao());
 
             Console.WriteLine(roberta.Nome);
-            Console.WriteLine("Diretor - Bonificação: " + roberta.GetBonificacao());
+            Console.WriteLine(roberta.GetBonificacao());
 
             Console.WriteLine("Total de bonificações: " + gerenciador.GetTotalBonificacao());
 
