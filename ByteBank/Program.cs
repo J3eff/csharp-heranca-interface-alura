@@ -21,7 +21,6 @@ namespace ByteBank
             roberta.Salario = 5000;
 
             Funcionario robertaTest = roberta;
-
             Console.WriteLine("Bonificação de uma referencia de Diretor: " + roberta.GetBonificacao());
             Console.WriteLine("Bonificação de uma referencia de Funcionario: " + robertaTest.GetBonificacao());
 
